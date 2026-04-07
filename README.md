@@ -1,47 +1,70 @@
-# 🧮 Matrices - Suma de Elementos (PSeInt)
+# 🧮 Matrices - Suma de Elementos (PSeInt) 🚀
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![PSEINT](https://img.shields.io/badge/PSEINT-3.0-orange.svg)](http://pseint.sourceforge.net/)
-[![GitHub stars](https://img.shields.io/github/stars/FeibertGuzman/Matrices.svg?style=social\&label=Star)](https://github.com/FeibertGuzman/Matrices/stargazers)
+[![PSeInt](https://img.shields.io/badge/PSeInt-3.0-orange.svg)](http://pseint.sourceforge.net/)
+[![Stars](https://img.shields.io/github/stars/FeibertGuzman/Matrices?style=social)](https://github.com/FeibertGuzman/Matrices/stargazers)
+
+---
+
+## 🧭 Tabla de Contenido
+
+* [📌 Descripción](#-descripción)
+* [🎯 Objetivo](#-objetivo)
+* [🧠 Fundamentos](#-fundamentos)
+* [🔄 Diagrama de Flujo](#-diagrama-de-flujo)
+* [💻 Pseudocódigo](#-pseudocódigo)
+* [⚙️ Requisitos](#️-requisitos)
+* [🚀 Ejecución](#-ejecución)
+* [📥 Instalación](#-instalación)
+* [📁 Estructura](#-estructura-del-proyecto)
+* [🧪 Ejemplo](#-ejemplo-de-salida)
+* [📊 Complejidad](#-complejidad)
+* [🔁 Extensiones](#-extensiones)
+* [🧪 Testing (didáctico)](#-testing-didáctico)
+* [🤝 Contribuciones](#-contribuciones)
+* [📜 Licencia](#-licencia)
 
 ---
 
 ## 📌 Descripción
 
-Este repositorio contiene un algoritmo desarrollado en **PSeInt** que permite **sumar los elementos de una matriz de 3x3**, solicitando los valores al usuario y mostrando el resultado final.
+Implementación en **PSeInt** de un algoritmo para **sumar los elementos de una matriz 3x3**.
 
-Es un ejemplo básico pero fundamental para comprender:
-
-* Uso de **arreglos bidimensionales**
-* Estructuras de control (**ciclos anidados**)
-* Entrada y salida de datos
+Aunque es un ejercicio base, aquí se trata como un micro–proyecto serio: documentación clara, extensibilidad y enfoque pedagógico.
 
 ---
 
 ## 🎯 Objetivo
 
-Demostrar de forma clara y práctica cómo recorrer una matriz y acumular valores utilizando pseudocódigo estructurado.
+* Comprender el recorrido de matrices
+* Aplicar ciclos anidados
+* Introducir acumuladores
+* Preparar base para algoritmos más complejos
 
 ---
 
-## 🧠 Lógica del algoritmo
+## 🧠 Fundamentos
 
-1. Inicializar una variable acumuladora en 0
-2. Recorrer la matriz usando dos ciclos (filas y columnas)
-3. Solicitar cada valor al usuario
-4. Sumar cada elemento a la variable acumuladora
-5. Mostrar el resultado final
+Conceptos clave:
+
+* Arreglos bidimensionales
+* Iteración controlada
+* Acumulación
+* Entrada interactiva
 
 ---
 
 ## 🔄 Diagrama de Flujo
 
-Puedes incluir aquí el diagrama del algoritmo. Herramientas recomendadas:
+📌 Recomendación profesional:
 
-* [https://lucidchart.com](https://lucidchart.com)
-* [https://draw.io](https://draw.io)
+* Guarda el diagrama en `/docs/diagrama.png`
+* Usa herramientas como draw.io o Lucidchart
 
-> 💡 Sugerencia: Exporta el diagrama como imagen y colócalo en una carpeta `/docs` para mantener el repo organizado.
+```md
+/docs
+  └── diagrama.png
+```
 
 ---
 
@@ -69,23 +92,31 @@ Fin Proceso
 
 ## ⚙️ Requisitos
 
-* Tener instalado **PSeInt 3.0 o superior**
+* PSeInt 3.0 o superior
 
 ---
 
 ## 🚀 Ejecución
 
+```bash
+# Abrir PSeInt
+# Ejecutar archivo .psc
+```
+
+Pasos:
+
 1. Abrir PSeInt
-2. Copiar el pseudocódigo o abrir el archivo `.psc`
-3. Ejecutar el programa
-4. Ingresar los valores solicitados
+2. Cargar el archivo
+3. Ejecutar
+4. Ingresar datos
 
 ---
 
-## 📥 Instalación / Clonar repositorio
+## 📥 Instalación
 
 ```bash
 git clone https://github.com/FeibertGuzman/Matrices.git
+cd Matrices
 ```
 
 ---
@@ -98,6 +129,8 @@ Matrices/
 │── matriz.psc
 │── docs/
 │   └── diagrama.png
+│── examples/
+│   └── output.txt
 ```
 
 ---
@@ -113,19 +146,59 @@ La suma de todos los elementos es: 45
 
 ---
 
+## 📊 Complejidad
+
+* Tiempo: O(n²)
+* Espacio: O(n²)
+
+Donde n = dimensión de la matriz.
+
+---
+
+## 🔁 Extensiones
+
+Ideas para escalar el proyecto:
+
+* ✅ Matrices dinámicas (n x m)
+* ✅ Validación de entrada
+* ✅ Promedio de elementos
+* ✅ Búsqueda de máximos/mínimos
+* ✅ Versión en Python / Java / C++
+* ✅ Interfaz gráfica (nivel pro 😏)
+
+---
+
+## 🧪 Testing (didáctico)
+
+Casos sugeridos:
+
+| Caso      | Entrada | Resultado esperado |
+| --------- | ------- | ------------------ |
+| Normal    | 1..9    | 45                 |
+| Ceros     | todo 0  | 0                  |
+| Negativos | -1..-9  | -45                |
+
+---
+
 ## 🤝 Contribuciones
 
-Las contribuciones son bienvenidas. Puedes:
+Flujo recomendado:
 
-* Mejorar el algoritmo
-* Agregar validaciones
-* Extender a matrices dinámicas
+```bash
+fork → clone → branch → commit → push → PR
+```
+
+Buenas prácticas:
+
+* Commits descriptivos
+* Código limpio
+* Documentación actualizada
 
 ---
 
 ## 📜 Licencia
 
-Este proyecto está bajo la licencia MIT.
+MIT License
 
 ---
 
@@ -137,4 +210,22 @@ Este proyecto está bajo la licencia MIT.
 
 ## ⭐ Apóyalo
 
-Si este proyecto te sirvió, dale una estrella ⭐ al repositorio. No cuesta nada y motiva bastante 😄
+Si este repo te ayudó:
+
+👉 Dale estrella ⭐
+👉 Compártelo
+👉 Úsalo en clase
+
+---
+
+## 🧠 Nota final
+
+Este no es “solo un ejercicio”.
+
+Es la base de estructuras más complejas como:
+
+* Procesamiento de imágenes
+* Machine Learning
+* Simulación numérica
+
+Sí… todo empieza con un simple `for` bien hecho 😄
